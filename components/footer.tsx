@@ -1,7 +1,14 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import { Github, Linkedin, Instagram, Twitter, Mail, Heart } from "lucide-react"
+import Link from "next/link";
+import {
+  Github,
+  Linkedin,
+  Instagram,
+  Twitter,
+  Mail,
+  Heart,
+} from "lucide-react";
 
 const socialLinks = [
   {
@@ -26,10 +33,10 @@ const socialLinks = [
   },
   {
     name: "Email",
-    href: "mailto:nitish@example.com",
+    href: "mailto:nitishpandey3108@gmail.com",
     icon: Mail,
   },
-]
+];
 
 export function Footer() {
   return (
@@ -54,13 +61,16 @@ export function Footer() {
 
           {/* Made with love */}
           <p className="flex items-center gap-1 text-sm text-muted-foreground">
-            Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" /> using Next.js
+            Made with <Heart className="h-4 w-4 text-red-500 fill-red-500" />{" "}
+            using Next.js
           </p>
 
           {/* Copyright */}
-          <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} — Nitish Pandey</p>
+          <p className="text-sm text-muted-foreground">
+            © {new Date().getFullYear()} — Nitish Pandey
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
