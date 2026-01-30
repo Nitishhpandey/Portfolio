@@ -10,7 +10,7 @@ const navLinks = [
   { href: "#about", label: "About" },
   { href: "#projects", label: "Projects" },
   { href: "#connect", label: "Let's Connect" },
-  { href: "/resume.pdf", label: "Resume", external: true },
+  { href: "/Nitish.pdf", label: "Resume", external: true },
 ]
 
 export function Navbar() {
