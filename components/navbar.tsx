@@ -31,7 +31,9 @@ export function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/80 backdrop-blur-md border-b border-border" : "bg-transparent"
+        scrolled
+          ? "bg-background/80 backdrop-blur-md border-b border-border"
+          : "bg-transparent"
       }`}
     >
       <nav className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
@@ -69,7 +71,7 @@ export function Navbar() {
               <Github className="h-5 w-5" />
             </Link>
             <Link
-              href="https://linkedin.com/in/nitishpandey"
+              href="https://linkedin.com/in/nitishhpandey"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -79,7 +81,11 @@ export function Navbar() {
           </div>
 
           {/* Mobile Menu Button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-foreground p-2" aria-label="Toggle menu">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-foreground p-2"
+            aria-label="Toggle menu"
+          >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
@@ -129,5 +135,5 @@ export function Navbar() {
         </AnimatePresence>
       </nav>
     </motion.header>
-  )
+  );
 }
